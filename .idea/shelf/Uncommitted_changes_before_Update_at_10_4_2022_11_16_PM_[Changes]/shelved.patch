@@ -1,0 +1,278 @@
+Index: src/ArrayDemo1.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import java.sql.SQLOutput;\r\n\r\npublic class ArrayDemo1\r\n{\r\n    public static void main(String[]ar)\r\n    {\r\n        int arr[] = new int[5];\r\n//        System.out.println(arr[0]);\r\n//        System.out.println(arr[1]);\r\n//        System.out.println(arr[2]);\r\n//        System.out.println(arr[3]);\r\n//        System.out.println(arr[4]);\r\n//\r\n//        System.out.println();\r\n//        System.out.println();\r\n\r\n        arr[0] = 11;\r\n        arr[1] = 22;\r\n        arr[2] = 33;\r\n        arr[3] = 44;\r\n        arr[4] = 55;\r\n\r\n        for(int i=0; i<arr.length; i++)\r\n        {\r\n\r\n            System.out.println(arr[i]);\r\n        }\r\n//        System.out.println();\r\n//        System.out.println();\r\n//          for(int x : arr)\r\n//          {\r\n//              System.out.println(x);\r\n//          }\r\n\r\n        int arr1[][];\r\n        arr1 = new int[2][2];\r\n\r\n        arr1[0][0] = 11;\r\n        arr1[0][1] = 22;\r\n        arr1[1][0] = 33;\r\n        arr1[1][1] = 44;\r\n\r\n\r\n        System.out.println(\"Two Dimensional Array\");\r\n        for(int i=0; i<arr1.length; i++)\r\n        {\r\n            for(int j=0; j<arr1.length; j++)\r\n            {\r\n                System.out.print(\" \"+ arr1[i][j] +\" \");\r\n            }\r\n            System.out.println();\r\n        }\r\n\r\n\r\n        System.out.println(\"Jagged Array\");\r\n        //int arr2[][] = new int[2][3];\r\n        int arr2[][] = {{1, 2}, {3, 4}, {5, 6}};\r\n\r\n        for(int i=0; i<=arr2.length; i++)\r\n        {\r\n            for(int j=0; j<=arr2.length; j++)\r\n            {\r\n                System.out.print(\" \"+ arr2[i][j] +\" \");\r\n            }\r\n            System.out.println();\r\n        }\r\n\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/ArrayDemo1.java b/src/ArrayDemo1.java
+--- a/src/ArrayDemo1.java	(revision aadf9b33b207380a352e6f17974b0f286d0e55c2)
++++ b/src/ArrayDemo1.java	(date 1664905260830)
+@@ -1,30 +1,50 @@
+-import java.sql.SQLOutput;
+-
+ public class ArrayDemo1
+ {
+     public static void main(String[]ar)
+     {
+-        int arr[] = new int[5];
+-//        System.out.println(arr[0]);
+-//        System.out.println(arr[1]);
+-//        System.out.println(arr[2]);
+-//        System.out.println(arr[3]);
+-//        System.out.println(arr[4]);
++
++        //ArrayDemo1 ad = new ArrayDemo1();
++
++//        int arr[] = new int[5];
++////        System.out.println(arr[0]);
++////        System.out.println(arr[1]);
++////        System.out.println(arr[2]);
++////        System.out.println(arr[3]);
++////        System.out.println(arr[4]);
++////
++////        System.out.println();
++////        System.out.println();
+ //
+-//        System.out.println();
+-//        System.out.println();
++//        arr[0] = 11;
++//        arr[1] = 22;
++//        arr[2] = 33;
++//        arr[3] = 44;
++//        arr[4] = 55;
+ 
+-        arr[0] = 11;
+-        arr[1] = 22;
+-        arr[2] = 33;
+-        arr[3] = 44;
+-        arr[4] = 55;
++        //ad.sum(arr);
++//        int res = ad.returnSum(arr);
++//        System.out.println("Return Sum : "+res);
+ 
+-        for(int i=0; i<arr.length; i++)
++
++        System.out.print("Return Array : ");
++        int[] retArr = returnArray();
++
++//        for(int i=0; i<retArr.length; i++)
++//        {
++//            System.out.print(" "+retArr[i]);
++//        }
++
++        for(int x : retArr)
+         {
+-
+-            System.out.println(arr[i]);
++            System.out.print(" "+ x);
+         }
++
++
++//        for(int i=0; i<arr.length; i++)
++//        {
++//
++//            System.out.println(arr[i]);
++//        }
+ //        System.out.println();
+ //        System.out.println();
+ //          for(int x : arr)
+@@ -32,38 +52,63 @@
+ //              System.out.println(x);
+ //          }
+ 
+-        int arr1[][];
+-        arr1 = new int[2][2];
+-
+-        arr1[0][0] = 11;
+-        arr1[0][1] = 22;
+-        arr1[1][0] = 33;
+-        arr1[1][1] = 44;
++//        int arr1[][];
++//        arr1 = new int[2][2];
++//
++//        arr1[0][0] = 11;
++//        arr1[0][1] = 22;
++//        arr1[1][0] = 33;
++//        arr1[1][1] = 44;
++//
++//
++//        System.out.println("Two Dimensional Array");
++//        for(int i=0; i<arr1.length; i++)
++//        {
++//            for(int j=0; j<arr1.length; j++)
++//            {
++//                System.out.print(" "+ arr1[i][j] +" ");
++//            }
++//            System.out.println();
++//        }
+ 
+ 
+-        System.out.println("Two Dimensional Array");
+-        for(int i=0; i<arr1.length; i++)
+-        {
+-            for(int j=0; j<arr1.length; j++)
+-            {
+-                System.out.print(" "+ arr1[i][j] +" ");
+-            }
+-            System.out.println();
+-        }
++//        System.out.println("Jagged Array");
++//        //int arr2[][] = new int[2][3];
++//        int arr2[][] = {{1, 2}, {3, 4}, {5, 6}};
++//
++//        for(int i=0; i<=arr2.length; i++)
++//        {
++//            for(int j=0; j<=arr2.length; j++)
++//            {
++//                System.out.print(" "+ arr2[i][j] +" ");
++//            }
++//            System.out.println();
++//        }
++    }
+ 
++//    public void sum(int arr[])
++//    {
++//        int temp;
++//        for(int i=0; i<arr.length; i++)
++//        {
++//            temp += arr[i];
++//        }
++//        System.out.println(temp);
++//    }
+ 
+-        System.out.println("Jagged Array");
+-        //int arr2[][] = new int[2][3];
+-        int arr2[][] = {{1, 2}, {3, 4}, {5, 6}};
++//    public int returnSum(int arr[])
++//    {
++//        int temp=0;
++//        for(int i=0; i<arr.length; i++)
++//        {
++//          temp += arr[i];
++//        }
++//        return temp;
++//    }
+ 
+-        for(int i=0; i<=arr2.length; i++)
+-        {
+-            for(int j=0; j<=arr2.length; j++)
+-            {
+-                System.out.print(" "+ arr2[i][j] +" ");
+-            }
+-            System.out.println();
+-        }
+-
++    public static int[] returnArray()
++    {
++        int arr[] = {11, 22, 33, 44, 55};
++        return arr;
+     }
+ }
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"6b0a8284-fe2e-4e8d-8ef3-3c70e91a0392\" name=\"Changes\" comment=\"git commit -m &quot;shoaib812/JavaPrograms/CountVowelConsonant&quot;\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2FeglkXmBHTVmRpCatd86cfhiOY\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <ConfirmationsSetting value=\"1\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;\r\n  }\r\n}</component>\r\n  <component name=\"RunManager\" selected=\"Application.AnagramString\">\r\n    <configuration name=\"AnagramString\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"AnagramString\" />\r\n      <module name=\"NewJavaClasses\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"ArrayDemo1\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"ArrayDemo1\" />\r\n      <module name=\"NewJavaClasses\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"CountVowelConsonant\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"CountVowelConsonant\" />\r\n      <module name=\"NewJavaClasses\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"StringDemo1\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"StringDemo1\" />\r\n      <module name=\"NewJavaClasses\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"Application.AnagramString\" />\r\n        <item itemvalue=\"Application.CountVowelConsonant\" />\r\n        <item itemvalue=\"Application.StringDemo1\" />\r\n        <item itemvalue=\"Application.ArrayDemo1\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"6b0a8284-fe2e-4e8d-8ef3-3c70e91a0392\" name=\"Changes\" comment=\"\" />\r\n      <created>1664858118041</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1664858118041</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"git commit -m &quot;shoaib812/JavaPrograms/ArrayDemo1&quot;\">\r\n      <created>1664861571573</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1664861571573</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"git commit -m &quot;shoaib812/JavaPrograms/ArrayDemo1&quot;\">\r\n      <created>1664861998590</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1664861998590</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"git commit -m &quot;shoaib812/JavaPrograms/ArrayDemo1&quot;\">\r\n      <created>1664863015672</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1664863015672</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"git commit -m &quot;shoaib812/JavaPrograms/CountVowelConsonant&quot;\">\r\n      <created>1664881822461</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1664881822461</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"git commit -m &quot;shoaib812/JavaPrograms/CountVowelConsonant&quot;\">\r\n      <created>1664881866388</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1664881866388</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"6\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"git commit -m &quot;shoaib812/JavaPrograms/ArrayDemo1&quot;\" />\r\n    <MESSAGE value=\"git commit -m &quot;shoaib812/JavaPrograms/CountVowelConsonant&quot;\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"git commit -m &quot;shoaib812/JavaPrograms/CountVowelConsonant&quot;\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision aadf9b33b207380a352e6f17974b0f286d0e55c2)
++++ b/.idea/workspace.xml	(date 1664905588928)
+@@ -1,8 +1,9 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="ChangeListManager">
+-    <list default="true" id="6b0a8284-fe2e-4e8d-8ef3-3c70e91a0392" name="Changes" comment="git commit -m &quot;shoaib812/JavaPrograms/CountVowelConsonant&quot;">
++    <list default="true" id="6b0a8284-fe2e-4e8d-8ef3-3c70e91a0392" name="Changes" comment=" git commit -m &quot;shoaib812/JavaPrograms/ArrayDemo1&quot;">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/ArrayDemo1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ArrayDemo1.java" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -36,7 +37,7 @@
+     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+   }
+ }</component>
+-  <component name="RunManager" selected="Application.AnagramString">
++  <component name="RunManager" selected="Application.ArrayDemo1">
+     <configuration name="AnagramString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+       <option name="MAIN_CLASS_NAME" value="AnagramString" />
+       <module name="NewJavaClasses" />
+@@ -67,10 +68,10 @@
+     </configuration>
+     <recent_temporary>
+       <list>
++        <item itemvalue="Application.ArrayDemo1" />
+         <item itemvalue="Application.AnagramString" />
+         <item itemvalue="Application.CountVowelConsonant" />
+         <item itemvalue="Application.StringDemo1" />
+-        <item itemvalue="Application.ArrayDemo1" />
+       </list>
+     </recent_temporary>
+   </component>
+@@ -118,7 +119,49 @@
+       <option name="project" value="LOCAL" />
+       <updated>1664881866388</updated>
+     </task>
+-    <option name="localTasksCounter" value="6" />
++    <task id="LOCAL-00006" summary="git commit -m &quot;shoaib812/JavaPrograms/AnagramString&quot;">
++      <created>1664883271520</created>
++      <option name="number" value="00006" />
++      <option name="presentableId" value="LOCAL-00006" />
++      <option name="project" value="LOCAL" />
++      <updated>1664883271520</updated>
++    </task>
++    <task id="LOCAL-00007" summary="git commit -m &quot;shoaib812/JavaPrograms/AnagramString&quot;">
++      <created>1664883332096</created>
++      <option name="number" value="00007" />
++      <option name="presentableId" value="LOCAL-00007" />
++      <option name="project" value="LOCAL" />
++      <updated>1664883332096</updated>
++    </task>
++    <task id="LOCAL-00008" summary="git commit -m &quot;shoaib812/JavaPrograms/AnagramString&quot;">
++      <created>1664905354898</created>
++      <option name="number" value="00008" />
++      <option name="presentableId" value="LOCAL-00008" />
++      <option name="project" value="LOCAL" />
++      <updated>1664905354898</updated>
++    </task>
++    <task id="LOCAL-00009" summary="git commit -m &quot;shoaib812/JavaPrograms/AnagramString&quot;">
++      <created>1664905374799</created>
++      <option name="number" value="00009" />
++      <option name="presentableId" value="LOCAL-00009" />
++      <option name="project" value="LOCAL" />
++      <updated>1664905374799</updated>
++    </task>
++    <task id="LOCAL-00010" summary=" git commit -m &quot;shoaib812/JavaPrograms/ArrayDemo1&quot;">
++      <created>1664905571284</created>
++      <option name="number" value="00010" />
++      <option name="presentableId" value="LOCAL-00010" />
++      <option name="project" value="LOCAL" />
++      <updated>1664905571284</updated>
++    </task>
++    <task id="LOCAL-00011" summary=" git commit -m &quot;shoaib812/JavaPrograms/ArrayDemo1&quot;">
++      <created>1664905580844</created>
++      <option name="number" value="00011" />
++      <option name="presentableId" value="LOCAL-00011" />
++      <option name="project" value="LOCAL" />
++      <updated>1664905580844</updated>
++    </task>
++    <option name="localTasksCounter" value="12" />
+     <servers />
+   </component>
+   <component name="Vcs.Log.Tabs.Properties">
+@@ -133,8 +176,10 @@
+     </option>
+   </component>
+   <component name="VcsManagerConfiguration">
+-    <MESSAGE value="git commit -m &quot;shoaib812/JavaPrograms/ArrayDemo1&quot;" />
+     <MESSAGE value="git commit -m &quot;shoaib812/JavaPrograms/CountVowelConsonant&quot;" />
+-    <option name="LAST_COMMIT_MESSAGE" value="git commit -m &quot;shoaib812/JavaPrograms/CountVowelConsonant&quot;" />
++    <MESSAGE value="git commit -m &quot;shoaib812/JavaPrograms/ArrayDemo1&quot;" />
++    <MESSAGE value="git commit -m &quot;shoaib812/JavaPrograms/AnagramString&quot;" />
++    <MESSAGE value=" git commit -m &quot;shoaib812/JavaPrograms/ArrayDemo1&quot;" />
++    <option name="LAST_COMMIT_MESSAGE" value=" git commit -m &quot;shoaib812/JavaPrograms/ArrayDemo1&quot;" />
+   </component>
+ </project>
+\ No newline at end of file
