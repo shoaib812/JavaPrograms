@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6b0a8284-fe2e-4e8d-8ef3-3c70e91a0392" name="Changes" comment="git commit -m &quot;shoaib812/JavaPrograms/CountVowelConsonant&quot;">
+    <list default="true" id="6b0a8284-fe2e-4e8d-8ef3-3c70e91a0392" name="Changes" comment=" git commit -m &quot;shoaib812/JavaPrograms/ArrayAverage1&quot;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -17,7 +17,13 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -36,9 +42,16 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.AnagramString">
+  <component name="RunManager" selected="Application.ArrayAverage1">
     <configuration name="AnagramString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="AnagramString" />
+      <module name="NewJavaClasses" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ArrayAverage1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ArrayAverage1" />
       <module name="NewJavaClasses" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -67,10 +80,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ArrayAverage1" />
+        <item itemvalue="Application.ArrayDemo1" />
         <item itemvalue="Application.AnagramString" />
         <item itemvalue="Application.CountVowelConsonant" />
         <item itemvalue="Application.StringDemo1" />
-        <item itemvalue="Application.ArrayDemo1" />
       </list>
     </recent_temporary>
   </component>
@@ -118,7 +132,98 @@
       <option name="project" value="LOCAL" />
       <updated>1664881866388</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="git commit -m &quot;shoaib812/JavaPrograms/AnagramString&quot;">
+      <created>1664883271520</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1664883271520</updated>
+    </task>
+    <task id="LOCAL-00007" summary="git commit -m &quot;shoaib812/JavaPrograms/AnagramString&quot;">
+      <created>1664883332096</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1664883332096</updated>
+    </task>
+    <task id="LOCAL-00008" summary="git commit -m &quot;shoaib812/JavaPrograms/AnagramString&quot;">
+      <created>1664905354898</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1664905354898</updated>
+    </task>
+    <task id="LOCAL-00009" summary="git commit -m &quot;shoaib812/JavaPrograms/AnagramString&quot;">
+      <created>1664905374799</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1664905374799</updated>
+    </task>
+    <task id="LOCAL-00010" summary=" git commit -m &quot;shoaib812/JavaPrograms/ArrayDemo1&quot;">
+      <created>1664905571284</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1664905571284</updated>
+    </task>
+    <task id="LOCAL-00011" summary=" git commit -m &quot;shoaib812/JavaPrograms/ArrayDemo1&quot;">
+      <created>1664905580844</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1664905580844</updated>
+    </task>
+    <task id="LOCAL-00012" summary=" git commit -m &quot;shoaib812/JavaPrograms/ArrayDemo1&quot;">
+      <created>1664905750715</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1664905750715</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Merge remote-tracking branch 'origin/master'">
+      <created>1664905816975</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1664905816975</updated>
+    </task>
+    <task id="LOCAL-00014" summary=" git commit -m &quot;shoaib812/JavaPrograms/ArrayDemo1&quot;">
+      <created>1664905892954</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1664905892954</updated>
+    </task>
+    <task id="LOCAL-00015" summary=" git commit -m &quot;shoaib812/JavaPrograms/ArrayAverage1&quot;">
+      <created>1664942882455</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1664942882456</updated>
+    </task>
+    <task id="LOCAL-00016" summary=" git commit -m &quot;shoaib812/JavaPrograms/ArrayAverage1&quot;">
+      <created>1664942920900</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1664942920900</updated>
+    </task>
+    <task id="LOCAL-00017" summary=" git commit -m &quot;shoaib812/JavaPrograms/ArrayAverage1&quot;">
+      <created>1664943055408</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1664943055408</updated>
+    </task>
+    <task id="LOCAL-00018" summary=" git commit -m &quot;shoaib812/JavaPrograms/ArrayAverage1&quot;">
+      <created>1664943113952</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1664943113952</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -133,8 +238,12 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="git commit -m &quot;shoaib812/JavaPrograms/ArrayDemo1&quot;" />
     <MESSAGE value="git commit -m &quot;shoaib812/JavaPrograms/CountVowelConsonant&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="git commit -m &quot;shoaib812/JavaPrograms/CountVowelConsonant&quot;" />
+    <MESSAGE value="git commit -m &quot;shoaib812/JavaPrograms/ArrayDemo1&quot;" />
+    <MESSAGE value="git commit -m &quot;shoaib812/JavaPrograms/AnagramString&quot;" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/master'" />
+    <MESSAGE value=" git commit -m &quot;shoaib812/JavaPrograms/ArrayDemo1&quot;" />
+    <MESSAGE value=" git commit -m &quot;shoaib812/JavaPrograms/ArrayAverage1&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value=" git commit -m &quot;shoaib812/JavaPrograms/ArrayAverage1&quot;" />
   </component>
 </project>
