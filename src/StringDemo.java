@@ -4,7 +4,8 @@ public class StringDemo
     public void addString()
     {
         //String str = "123";
-        String str = "5555";
+//        String str = "5555";
+        String str = "12DD12";
         int strLength = str.length();
         System.out.println(strLength);
         int temp=0;
