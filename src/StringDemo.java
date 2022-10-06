@@ -3,16 +3,24 @@ public class StringDemo
 
     public void addString()
     {
-        String str = "123";
+        //String str = "123";
+        String str = "5555";
         int strLength = str.length();
         System.out.println(strLength);
         int temp=0;
+        char ch;
+        int add=0;
         for(int i=0; i<strLength; i++)
         {
-            temp += str.charAt(i);
-            System.out.println(temp);
+           // temp = str.charAt(i);
+            ch = str.charAt(i);
+            if(Character.isDigit(ch))
+            {
+                temp = Character.getNumericValue(ch);
+                add += temp;
+            }
         }
-        System.out.println(temp);
+        System.out.println(add);
     }
 
     public static void main(String[]ar)
